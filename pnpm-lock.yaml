@@ -14,9 +14,9 @@ importers:
       eslint:
         specifier: ^8.29.0
         version: 8.29.0
-      eslint-config-acme:
+      eslint-config-dupree:
         specifier: workspace:0.0.0
-        version: link:packages/eslint-config-acme
+        version: link:packages/eslint-config-dupree
       prettier:
         specifier: ^2.8.0
         version: 2.8.0
@@ -26,9 +26,9 @@ importers:
 
   apps/docs:
     dependencies:
-      '@acme/core':
+      '@dupree/core':
         specifier: workspace:0.0.0
-        version: link:../../packages/acme-core
+        version: link:../../packages/dupree-core
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -36,9 +36,9 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
-      '@acme/tsconfig':
+      '@dupree/tsconfig':
         specifier: workspace:0.0.0
-        version: link:../../packages/acme-tsconfig
+        version: link:../../packages/dupree-tsconfig
       '@storybook/addon-actions':
         specifier: ^6.5.14
         version: 6.5.14(react-dom@18.2.0)(react@18.2.0)
@@ -60,9 +60,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^1.3.2
         version: 1.3.2
-      eslint-config-acme:
+      eslint-config-dupree:
         specifier: workspace:0.0.0
-        version: link:../../packages/eslint-config-acme
+        version: link:../../packages/eslint-config-dupree
       serve:
         specifier: ^13.0.4
         version: 13.0.4
@@ -73,11 +73,11 @@ importers:
         specifier: ^2.9.15
         version: 2.9.15
 
-  packages/acme-core:
+  packages/dupree-core:
     devDependencies:
-      '@acme/tsconfig':
+      '@dupree/tsconfig':
         specifier: workspace:*
-        version: link:../acme-tsconfig
+        version: link:../dupree-tsconfig
       '@types/react':
         specifier: ^18.0.9
         version: 18.0.26
@@ -87,9 +87,9 @@ importers:
       eslint:
         specifier: ^8.15.0
         version: 8.29.0
-      eslint-config-acme:
+      eslint-config-dupree:
         specifier: workspace:*
-        version: link:../eslint-config-acme
+        version: link:../eslint-config-dupree
       react:
         specifier: ^18.1.0
         version: 18.2.0
@@ -100,13 +100,13 @@ importers:
         specifier: ^4.5.3
         version: 4.9.3
 
-  packages/acme-tsconfig: {}
+  packages/dupree-tsconfig: {}
 
-  packages/acme-utils:
+  packages/dupree-utils:
     devDependencies:
-      '@acme/tsconfig':
+      '@dupree/tsconfig':
         specifier: workspace:*
-        version: link:../acme-tsconfig
+        version: link:../dupree-tsconfig
       '@types/react':
         specifier: ^18.0.9
         version: 18.0.26
@@ -116,9 +116,9 @@ importers:
       eslint:
         specifier: ^8.15.0
         version: 8.29.0
-      eslint-config-acme:
+      eslint-config-dupree:
         specifier: workspace:*
-        version: link:../eslint-config-acme
+        version: link:../eslint-config-dupree
       react:
         specifier: ^18.1.0
         version: 18.2.0
@@ -129,7 +129,7 @@ importers:
         specifier: ^4.5.3
         version: 4.9.3
 
-  packages/eslint-config-acme:
+  packages/eslint-config-dupree:
     dependencies:
       eslint-config-next:
         specifier: latest
